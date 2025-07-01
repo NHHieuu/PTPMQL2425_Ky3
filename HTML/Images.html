@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Img/doremon.jpg" alt="doremon và những người bạn là văn bản thây thế choi hình ảnh" width="500" height="600">
+    <h1>Bản đồ hình ảnh</h1>
+    <img src="Img/doremon.jpg" alt="Workplace" usemap="#workmap"> <!--thêm usemap-->
+
+    <map name="workmap"> <!--tạo bản đồ hình ảnh-->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        <!--defaut xác định toàn bộ khu vực, rect hình chữ nhật, circle hình tròn, poly đa giác-->
+    <!--bấm vào hình ảnh trong ảnh thì sẽ dấn đến đường dẫn-->
+    </map>
+    <h1>
+    Hình ảnh nền 
+    </h1>
+    <br>
+    <p style="background-image: url('Img/doremon.jpg');  background-repeat: no-repeat"> <!--no reprat để tránh lặp lại ảnh khi ảnh nhỏ hơn phần tử-->
+        Nguyễn Hồng Hiếu-   2121050189
+        Doremon và những người bạn
+    </p>
+    <br>
+
+    <p style="background-attachment: fixed; background-size: cover;"> để ảnh làm bìa bao phủ hết phần tử</p>
+
+</body>
+</html>
