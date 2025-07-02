@@ -1,7 +1,10 @@
 <form asp-action="Index">
-    <input type="text" name="PersonId">
-    <input type="text" name=" FullName">
-    <input type="text" name="Address" id="">
+    <label for="">Nhập Id:</label><br>
+    <input type="text" name="PersonId"><br>
+    <label for="">Nhập Tên:</label><br>
+    <input type="text" name="FullName"><br>
+    <label for="">Nhập địa chỉ:</label><br>
+    <input type="text" name="Address" id=""><br>
     <input type="submit" value="Gửi dữ liệu">
 </form>
-<h2>Dữ Liệu lấy từ @ViewBag.Message</h2>
+<h2>Dữ Liệu lấy từ @ViewBag.infoPerson</h2>

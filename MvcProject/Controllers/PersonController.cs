@@ -9,11 +9,11 @@ namespace MvcProject.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Index(Person ps)
+        [HttpPost] //phương thức bên thực thi view asp-action
+        public IActionResult Index(Person ps) //asp-action ="Index" trùng ở view
         {
-            string Output = "Xinchao" + ps.PersonId + "ten là" + ps.FullName + "đến từ" + ps.Address;
-            ViewBag.Message = Output;
+            string Output = "Xin chào" +  ps.PersonId  +  "-"  + ps.FullName +  "-"  +  ps.Address;
+            ViewBag.infoPerson = Output; //gửi dữ liệu từ controller về View
             return View();
         }
     }

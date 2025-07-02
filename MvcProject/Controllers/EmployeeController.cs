@@ -8,5 +8,9 @@ namespace MvcProject.Controllers
         {
             return View();
         }
+        public IActionResult DonVi()
+        {
+            return View();
+        }
     }
 }
