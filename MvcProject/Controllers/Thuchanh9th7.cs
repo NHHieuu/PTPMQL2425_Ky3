@@ -55,24 +55,24 @@ namespace MvcProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PersonId")] Thuchanh9th7 thuchanh9th7)
+        public async Task<IActionResult> Create([Bind("PersonId")] Person ps)
         {
             if (ModelState.IsValid)
             {
-                
+              
                 string newId = "PS000";
 
                 int number = int.Parse(newId.Substring(2)) + 1; //chuyển số nguyên thành số thêm 1
                 newId = "PS" + number.ToString("D3"); //thành chuỗi  có 3 chữ số
 
-                thuchanh9th7.PersonId = newId;
+                ps.PersonId = newId; 
 
-                _context.Add(thuchanh9th7);
+                _context.Add(ps);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
                 
             }
-            return View(thuchanh9th7);
+            return View(ps);
         }
 
         // GET: Thuchanh9th7/Edit/5
