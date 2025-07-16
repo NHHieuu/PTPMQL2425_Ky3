@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MvcProject.Models;
 
 public class Daily
 {
+    [Key]
     public string MaDaily { get; set; }
     public string TenDaily { get; set; }
     public string Diachi { get; set; }

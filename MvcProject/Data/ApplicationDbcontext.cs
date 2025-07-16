@@ -6,7 +6,9 @@ namespace MvcProject.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Person> Person { get; set; }
-        
+
         public DbSet<Person> Persons { get; set; }
+        public DbSet<Daily> DaiLy { get; set; }
+        public DbSet<HeThongPhanPhoi> HeThongPhanPhois{ get; set; }
     }
 }
